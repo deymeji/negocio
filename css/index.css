@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: NUnito, sans-serif;
+  color:#0d0e0e; 
+  text-align: center;
+  
+}
+header{
+    height: 130px;
+    border-top: 70px solid #208e20;
+    text-align: justify;
+   }
+ h1{
+  color:#0a701b;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px 30px 20px 0px;
+}
+
+#menu nav{
+    text-align: center;
+    padding: 20px 0px 20px 30px;
+}   
+#menu nav a{
+    padding: 20px 0px 20px 30px;
+    font-size: 18px;
+    color:#5ad76d;
+    text-decoration: none;
+    transition: 5s;
+    text-align: center;
+}
+#menu nav a:hover{
+    color:#0a701b;
+ }
+footer{
+ background-color: #208e20;
+    height:135px;
+    
+}
+#final nav{
+    padding: 20px 0px 20px 30px;
+    text-align: center; 
+}
+    
+    #final nav a{
+        padding: 0px  30px 0px 50px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #5ad76d;
+        text-align: center;
+        transition: 5s;
+    }
+    #final nav a:hover{
+        color:#05350c;
+      
+    }
+    #redes {
+        padding: 20px 0px 20px 30px;
+        text-align: center;
+       
+    }
+    #redes  a{
+        width: 90px;
+        font-size: 25px;
+        text-decoration: none;
+        color: #5ad76d;
+        display: inline-block;
+        text-align: center;
+        transition: 5s;
+    
+    }
+    #redes a:hover{
+        color: #04260a;
+        
+    }
+    h3{
+        font-size: 20px;
+        color:#022609 ;
+        
+        
+    }
+  
+    
+   
+    .slider{
+        width: 1000px;
+        margin:  auto ;
+        
+        
+        overflow: hidden;
+    }
+    .slider ul{
+        display: flex;
+        padding: 0;
+        width: 399%;
+        animation:  slide 10s infinite ;
+    }
+    .slider li{
+        list-style: none;
+        width: 100%;
+    }
+    .slider img{
+        height: 400px;
+        width: 100%;
+        background-repeat: no-repeat;
+             background-position: center center;
+             background-size: cover ;
+    }
+    @keyframes slide {
+        0%{ margin-left: 0%;}
+        20%{ margin-left: 0%;}
+    
+        25%{ margin-left: -100%;}
+        45%{ margin-left: -100%;}
+    
+        50%{ margin-left: -200%;}
+        70%{ margin-left: -200%;}
+    
+        75%{ margin-left: -300%;}
+        95%{ margin-left: -300%;}
+    }
+    

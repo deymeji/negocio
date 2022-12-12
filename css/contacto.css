@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: url(../imagenes/verdu.jpg);
+  background-repeat: no-repeat;
+  font-family: Open, sans-serif;
+  background-size: cover;
+  color:#0d0e0d; 
+  
+}
+header{
+    height:80px;
+}
+
+main{
+    
+    width: 950px;
+    background-color: white;
+    height: 1000px;
+}
+h1{
+    font-family:italic;
+    color: #0a701b;
+    font-size: 35px;
+   text-decoration: none;
+
+}
+#menu nav{
+    text-align: center;
+    padding: 20px 0px 20px 30px;
+}   
+#menu nav a{
+    padding: 20px 0px 20px 30px;
+    font-size: 18px;
+    color:#5ad76d;
+    text-decoration: none;
+    transition: 5s;
+    text-align: center;
+}
+#menu nav a:hover{
+    color:#0a701b;
+ }
+ article{
+    text-align: center;
+ }
+ .form-fomulario input, .form-fomulario textarea{
+    padding: 20px;
+border-radius: 20px;
+border: none;
+border: 1px solid #919191;
+ }
+
+
+ #fin nav{
+    text-align: center;
+    padding: 20px 0px 20px 30px;
+}   
+#fin nav a{
+    padding: 10px;
+    font-size: 18px;
+    color:#5ad76d;
+    text-decoration: none;
+    transition: 5s;
+    text-align: center;  
+}
+#fin nav a:hover{
+
+    color:#0a701b;
+ }
+#redes {
+    padding: 20px 0px 20px 30px;
+    text-align: center;
+   
+}
+#redes  a{
+    width: 90px;
+   font-size: 30px;
+    text-decoration: none;
+    color: #5ad76d;
+    display: inline-block;
+    text-align: center;
+    transition: 5s;
+
+}
+#redes a:hover{
+    color: #04260a;
+    
+}
+footer{
+    height: 80px;
+}
+#direcc {
+    color: #5ad76d;
+text-align: center;
+}
+
+
