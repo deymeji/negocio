@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Negocio</title>
     <link rel="stylesheet" href="css/contacto.css">
-    
+    <script src="https://kit.fontawesome.com/c57b1712ce.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
     <header>
-  
+        
     </header>
     <main>
-        <h1>Minimarket MD250</h1>
+        
         <div id="menu">
+            <h1>Minimarket MD250</h1>
             <nav>
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="contacto.html">Contacto</a>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
             </nav>
 
         </div>
 
-        <article> 
-
+        <article>
+            
             <p> <br> <br> <br>
                 Para cualquier duda o incidencia puede usar estos métodos de contacto, te atenderemos rápidamente. <br> <br>
                 Contacto
@@ -39,30 +46,28 @@
                 Jueves a Domingo: 7:00h - 19:00h
                 
             </p><br><br><br>
-           
             
             <section class="form-fomulario">
-                <form>
-             <label>
-                 
-                <input class="control" type="" name="" minlength="5" maxlength="30" required placeholder="Nombre" > 
-            </label> 
-                <label>
-                    <input class="control" type="email" name="" minlength="5" maxlength="30" required placeholder="Email">
-            </label> <br>  <br> 
-                <label>
+                <form  action="https://formsubmit.co/deivimh25@gmail.com" method="POST">
+                    <label>
+                        <input class="control" type="" name="" minlength="5" maxlength="30" required placeholder="Nombre" >
+                    </label> 
+                    <label>
+                        <input class="control" type="email" name="" minlength="5" maxlength="30" required placeholder="Email">
+                    </label> <br>  <br> 
+                    <label>
                     <input class="control" type="number" name="" minlength="5" maxlength="30" required placeholder="Telefono">
-            </label> 
-                <label>
-                    <input class="control" type="text" name="" minlength="5" maxlength="30" required placeholder="Asunto">
-                </label> <br> <br>
-                <label > 
-                    <textarea class= "mensaje name="mensaje" cols="50" rows="10" maxlength=150></textarea>
-                </label><br><br>
-                <input type="submit" value="Enviar Mensaje" class="boton">
+                    </label> 
+                    <label>
+                        <input class="control" type="text" name="" minlength="5" maxlength="30" required placeholder="Asunto">
+                    </label> <br> <br>
+                    <label >
+                        <textarea class= "mensaje name="mensaje" cols="50" rows="10" maxlength=150></textarea>
+                    </label><br><br>
+                    <input type="button" value="Enviar Mensaje" id="boton">
                 <br> <br> <br><br>
             </section>
-                   </form>
+                </form>
                
 
         

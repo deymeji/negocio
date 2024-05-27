@@ -3,125 +3,228 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: NUnito, sans-serif;
+    color:#0d0e0e; 
+    text-align: center;
 }
-body{
-  font-family: NUnito, sans-serif;
-  color:#0d0e0e; 
-  text-align: center;
-  
+
+h1{
+    font-weight: 600;
+    padding: 20px 30px 20px 0px;
+    color:#0a701b;
+    font-size: 20px;
 }
+p{font-family: Lucida Calligraphy;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
 header{
     height: 130px;
     border-top: 70px solid #208e20;
-    text-align: justify;
-   }
- h1{
-  color:#0a701b;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 20px 30px 20px 0px;
+    display: flex;
 }
-
-#menu nav{
-    text-align: center;
+header #top{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#menu {
     padding: 20px 0px 20px 30px;
-}   
-#menu nav a{
+    font-size: 18px;
+    color:#5ad76d;
+    text-align: left;
+}
+#menu li{
+    position: relative;
+    display: inline-block;
+}
+#menu li a{
     padding: 20px 0px 20px 30px;
     font-size: 18px;
     color:#5ad76d;
     text-decoration: none;
     transition: 5s;
     text-align: center;
+    display: inline-block;
 }
-#menu nav a:hover{
+#menu li a:hover{
     color:#0a701b;
- }
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(1, 59, 59);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#hero{
+    height: 450px;
+    background-image: url(../imagenes/verdu.jpg)  ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover ;
+}
+
 footer{
  background-color: #208e20;
-    height:135px;
+    height:120px;
     
 }
 #final nav{
-    padding: 20px 0px 20px 30px;
+    padding: 5px 0px 10px 10px;
     text-align: center; 
 }
+
+#final nav a{
+    padding: 0px  30px 0px 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #5ad76d;
+    text-align: center;
+    transition: 5s;
+}
+#final nav a:hover{
+    color:#05350c;
+}
+#redes {
+    padding: 5px 0px 10px 10px;
+    text-align: center;
+}
+#redes  a{
+    width: 80px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #5ad76d;
+    display: inline-block;
+    text-align: center;
+    transition: 5s;
+
+}
+#redes a:hover{
+    color: #04260a;
     
-    #final nav a{
-        padding: 0px  30px 0px 50px;
-        font-size: 20px;
-        text-decoration: none;
-        color: #5ad76d;
-        text-align: center;
-        transition: 5s;
+}
+#envioo {
+    padding: 80px 0px 10px 10px;
+    text-align: center;
+}
+
+#envioo a{
+    font-size: 19px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+#envioo a i {
+    font-size: 44px; /* Tamaño deseado para los iconos */
+    margin-right: 10px; /* Espacio adicional a la derecha del icono */
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1 /* Color de fondo de la pista */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 5px; /* Radio de borde del pulgar */
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #aefaba #12501d;
+}
+
+.slider{
+    margin:  auto ;
+    overflow: hidden;
+    position: relative; /* Cambia la posición del slider a relativa */
+    z-index: 1; /* Asegúrate de que el slider tenga un z-index menor que el menú */
+    /* Otros estilos del slider aquí */
+}
+
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 399%;
+    animation:  slide 10s infinite ;
+}
+.slider ul li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    height: 350px;
+    width: 90%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+
+@keyframes slide {
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    
+    75%{ margin-left: -300%;}
+    95%{ margin-left: -300%;}
+}
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
     }
-    #final nav a:hover{
-        color:#05350c;
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    
+    #menu ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(228, 247, 231);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
       
     }
-    #redes {
-        padding: 20px 0px 20px 30px;
-        text-align: center;
-       
-    }
-    #redes  a{
-        width: 90px;
-        font-size: 25px;
-        text-decoration: none;
-        color: #5ad76d;
-        display: inline-block;
-        text-align: center;
-        transition: 5s;
-    
-    }
-    #redes a:hover{
-        color: #04260a;
-        
-    }
-    h3{
+    nav ul li a{
         font-size: 20px;
-        color:#022609 ;
-        
-        
     }
-  
-    
-   
-    .slider{
-        width: 1000px;
-        margin:  auto ;
-        
-        
-        overflow: hidden;
+    li a:hover, li a.active{
+        background: none;
     }
-    .slider ul{
-        display: flex;
-        padding: 0;
-        width: 399%;
-        animation:  slide 10s infinite ;
-    }
-    .slider li{
-        list-style: none;
-        width: 100%;
-    }
-    .slider img{
-        height: 400px;
-        width: 100%;
-        background-repeat: no-repeat;
-             background-position: center center;
-             background-size: cover ;
-    }
-    @keyframes slide {
-        0%{ margin-left: 0%;}
-        20%{ margin-left: 0%;}
-    
-        25%{ margin-left: -100%;}
-        45%{ margin-left: -100%;}
-    
-        50%{ margin-left: -200%;}
-        70%{ margin-left: -200%;}
-    
-        75%{ margin-left: -300%;}
-        95%{ margin-left: -300%;}
-    }
-    
+    #check:checked ~ ul{
+        left: 0;
+}
+}

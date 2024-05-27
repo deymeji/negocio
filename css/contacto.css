@@ -3,64 +3,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: NUnito, sans-serif;
+    text-align: center;
 }
 body{
-  background-image: url(../imagenes/verdu.jpg);
-  background-repeat: no-repeat;
-  font-family: Open, sans-serif;
-  background-size: cover;
-  color:#0d0e0d; 
-  
-}
-header{
-    height:80px;
-}
-
-main{
-    
-    width: 950px;
-    background-color: white;
-    height: 1000px;
+    background-image: url(../imagenes/verdu.jpg);
+    background-repeat: no-repeat;
+    font-family: Open, sans-serif;
+    background-size: cover;
 }
 h1{
     font-family:italic;
     color: #0a701b;
     font-size: 35px;
-   text-decoration: none;
-
+    text-decoration: none;
 }
-#menu nav{
-    text-align: center;
+p{
+    font-family: Lucida Calligraphy;
+    font-size: 17px;
+    
+}
+header{
+    height:80px;
+}
+main{
+    
+    max-width: 840px;
+    background-color: rgb(249, 255, 251);
+    height: 1050px;
+}
+
+#menu {
     padding: 20px 0px 20px 30px;
-}   
-#menu nav a{
+    font-size: 18px;
+    color:#5ad76d;
+    
+    text-align: left;
+}
+#menu li{
+    position: relative;
+    display: inline-block;
+}
+#menu li a{
     padding: 20px 0px 20px 30px;
     font-size: 18px;
     color:#5ad76d;
     text-decoration: none;
     transition: 5s;
     text-align: center;
+    display: inline-block;
 }
-#menu nav a:hover{
+#menu li a:hover{
     color:#0a701b;
- }
- article{
-    text-align: center;
- }
- .form-fomulario input, .form-fomulario textarea{
-    padding: 20px;
-border-radius: 20px;
-border: none;
-border: 1px solid #919191;
- }
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(1, 59, 59);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
 
 
- #fin nav{
+article{
     text-align: center;
-    padding: 20px 0px 20px 30px;
+}
+.form-fomulario input, .form-fomulario textarea{
+    padding: 7px;
+    border-radius: 20px;
+    border: 1px solid #393232;
+    font-size: 15px;
+}
+.control{
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #525252;;
+    margin-bottom: 16px;
+}
+
+#boton{
+    background:#57f782;
+    color: rgb(8, 8, 8);
+    padding: 12px;
+}
+
+
+#fin nav{
+    text-align: center;
+    padding: 5px 0px 10px 10px;
 }   
 #fin nav a{
-    padding: 10px;
+    padding: 0px  30px 0px 50px;
     font-size: 18px;
     color:#5ad76d;
     text-decoration: none;
@@ -70,15 +110,15 @@ border: 1px solid #919191;
 #fin nav a:hover{
 
     color:#0a701b;
- }
+}
 #redes {
-    padding: 20px 0px 20px 30px;
+    padding: 5px 0px 10px 10px;
     text-align: center;
-   
+
 }
 #redes  a{
-    width: 90px;
-   font-size: 30px;
+    width: 80px;
+    font-size: 25px;
     text-decoration: none;
     color: #5ad76d;
     display: inline-block;
@@ -98,4 +138,59 @@ footer{
 text-align: center;
 }
 
+::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de desplazamiento */
+}
 
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1 /* Color de fondo de la pista */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 5px; /* Radio de borde del pulgar */
+}
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #aefaba #12501d;
+}
+
+@media (min-width: 952px){
+    h1{
+        
+        text-align: center;  
+}
+    main{
+        padding: 50px 0;
+        
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:  100%;
+        height: 100vh;
+        background: rgb(228, 247, 231);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
